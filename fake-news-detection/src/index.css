@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Deep Navy Blue with Crisp White Theme (Dark Mode) */
+.theme-navy-dark {
+  --navy-bg: #071326;
+  --navy-card: #0c1e3d;
+  --navy-surface: #10264d;
+  --navy-hover: #163363;
+  --navy-border: #1e4079;
+  --navy-border-subtle: #142d54;
+  --text-main: #ffffff;
+  --text-sub: #cbd5e1;
+  --text-dim: #94a3b8;
+  --accent-blue: #3b82f6;
+  --btn-primary-bg: #ffffff;
+  --btn-primary-text: #071326;
+  --btn-primary-hover: #f1f5f9;
+  --badge-bg: rgba(255, 255, 255, 0.1);
+  --badge-border: rgba(255, 255, 255, 0.2);
+  --badge-text: #ffffff;
+  background-color: var(--navy-bg);
+  color: var(--text-main);
+}
+
+/* Crisp White with Deep Navy Blue Accents (Light Mode) */
+.theme-navy-light {
+  --navy-bg: #f8fafc;
+  --navy-card: #ffffff;
+  --navy-surface: #f1f5f9;
+  --navy-hover: #e2e8f0;
+  --navy-border: #cbd5e1;
+  --navy-border-subtle: #e2e8f0;
+  --text-main: #071326;
+  --text-sub: #1e293b;
+  --text-dim: #64748b;
+  --accent-blue: #1e3a8a;
+  --btn-primary-bg: #0c1e3d;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #163363;
+  --badge-bg: #e0e7ff;
+  --badge-border: #bfdbfe;
+  --badge-text: #1e3a8a;
+  background-color: var(--navy-bg);
+  color: var(--text-main);
+}
+
+/* Custom Navy Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.theme-navy-dark ::-webkit-scrollbar-track {
+  background: #071326;
+}
+
+.theme-navy-dark ::-webkit-scrollbar-thumb {
+  background: #1e4079;
+  border-radius: 4px;
+}
+
+.theme-navy-dark ::-webkit-scrollbar-thumb:hover {
+  background: #2b569e;
+}
+
+.theme-navy-light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.theme-navy-light ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+.theme-navy-light ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

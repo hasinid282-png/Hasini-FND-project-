@@ -1,0 +1,6 @@
+{
+  "name": "Fake News Detection",
+  "description": "Interactive AI-assisted fake news and misinformation detection platform with credibility analysis, linguistic verification, and source transparency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
